@@ -74,6 +74,12 @@ define('LOGGED_IN_SALT',   'put your unique phrase here');
 define('NONCE_SALT',       'put your unique phrase here');
 
 
+@ini_set( 'upload_max_filesize' , '250M' );
+@ini_set( 'post_max_size', '128M');
+@ini_set( 'memory_limit', '256M' );
+@ini_set( 'max_execution_time', '300' );
+@ini_set( 'max_input_time', '300' );
+
 /* Security for Wordpress : 
 you may wish to disable the plugin or theme editor to prevent overzealous users from being able to edit sensitive files and 
 potentially crash the site. Disabling these also provides an additional layer of security if a hacker gains access to a 
